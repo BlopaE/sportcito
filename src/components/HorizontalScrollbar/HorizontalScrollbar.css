@@ -1,0 +1,18 @@
+.react-horizontal-scrolling-menu--scroll-container {
+  overflow: hidden;
+}
+
+.right-arrow, .left-arrow {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+  
+  /* Posicionamiento de las flechas */
+  .right-arrow {
+    float: left;
+  }
+  
+  .left-arrow {
+    float: right;
+  }

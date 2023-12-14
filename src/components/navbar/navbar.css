@@ -1,0 +1,55 @@
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 200px;
+    height: 100vh;
+    background-color: var(--color-primary);
+    transition: max-width 0.2s ease;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 3rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav__link a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav__link a:hover {
+    color: var(--color-dark);
+}
+
+.nav__button {
+    width: 64px;
+    position: relative;
+    background-color: transparent;
+    right: -64px;
+    /* z-index: -1; */
+    border: none;
+    cursor: pointer;
+}
+
+.nav__button-img{
+    width: 64px;
+    position: relative;
+    left: -20px;
+    z-index: -1;
+}
+
+.hidden {
+    max-width: 0;
+    transition: max-width 0.2s ease-in;
+}
+
+.hidden__button {
+    left: -44px;
+}

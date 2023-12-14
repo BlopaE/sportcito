@@ -1,0 +1,14 @@
+.cardExercise {
+    padding: 1em;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+.cardExercise img {
+    width: 120px;
+    border-radius: 15px;
+}

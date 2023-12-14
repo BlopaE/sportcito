@@ -1,0 +1,16 @@
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero__login{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.2em;
+}
+
+.hero__logo img{
+    float: right;
+    max-width: 80px;
+}
