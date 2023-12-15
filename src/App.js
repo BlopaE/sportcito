@@ -7,7 +7,9 @@ import Home from "./pages/Home";
 import Ejercicios from "./pages/Ejercicios";
 import Rutinas from "./pages/Rutinas";
 import Contacto from "./pages/Contacto";
+import Login from "./components/Login/Login";
 import "./App.css";
+import Register from "./components/Register/Register";
 
 const App = () => {
 
@@ -22,6 +24,8 @@ const App = () => {
             <Route path="/ejercicios" element={<Ejercicios />} />
             <Route path="/rutinas" element={<Rutinas />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </div>
         <Social />
