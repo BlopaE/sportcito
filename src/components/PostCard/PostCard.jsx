@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./PostCard.css";
 
 const PostCard = ({ title, text, image }) => {
+
   const [opened, setOpened] = useState(false);
 
-  //Programar funcion para abrir los comentarios
-  //Se abre en una ventana modal, la cual debe tener un boton de cerrar
   function handleComents() {
     setOpened(!opened)
   }

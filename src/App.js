@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Social from "./components/Social/Social";
@@ -10,11 +10,12 @@ import Contacto from "./pages/Contacto";
 import "./App.css";
 
 const App = () => {
+
   return (
     <Router>
       <div className="app">
         <Navbar />
-        <div className="page padding">
+        <div className="page padding scrolleable">
           <Hero />
           <Routes>
             <Route path="/" exact element={<Home />} />

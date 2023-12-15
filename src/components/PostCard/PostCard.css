@@ -1,11 +1,30 @@
 .post {
+    margin: 0 auto;
     margin-bottom: 2em;
-    max-width: 800px;    
+    max-width: 700px;    
+}
+
+.post__title{
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .post__content {
+    width: 100%;
     display: flex;
     background-color: white;
-    padding: 1em;
     border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.post__left p {
+    padding: 12px;
+}
+
+.post__right img{
+    float: right;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 250px;
 }

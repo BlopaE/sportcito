@@ -38,7 +38,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   return (
     <div className="container">
-      <h3>Explore Ejercicios</h3>
+      <h3 className="title">Explore Ejercicios</h3>
       <form action="">
         <input
           type="text"

@@ -1,0 +1,14 @@
+.datos {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.datos-ubicacion p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.datos-contacto p {
+    text-align: left;
+}
