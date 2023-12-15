@@ -3,8 +3,9 @@ import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
 const Register = () => {
-  const [usuario, setUsuario] = useState("");
-  const [contrasena, setContrasena] = useState("");
+
+  const [nombre, setNombre] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -12,15 +13,17 @@ const Register = () => {
 
     // Construir el objeto de datos a enviar
     const datos = {
-      usuario: usuario,
-      contrasena: contrasena,
+      nombre: nombre,
+      password: password,
     };
 
     try {
       // Realizar la solicitud POST a la API
+      console.log(datos)
       const response = await axios.post("http://localhost:4000/api/guardar", datos);
       console.log("Respuesta del servidor:", response.data);
-      navigate("/login");
+      alert(response.data.message)
+      navigate("/ejercicios")
     } catch (error) {
       console.error("Error al enviar datos:", error);
     }
@@ -30,12 +33,12 @@ const Register = () => {
     <form onSubmit={handleSubmit}>
       <label>
         Usuario:
-        <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+        <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
       </label>
       <br />
       <label>
         Contraseña:
-        <input type="password" value={contrasena} onChange={(e) => setContrasena(e.target.value)} />
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       </label>
       <br />
       <button type="submit">Registrar</button>

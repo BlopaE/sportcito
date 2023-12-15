@@ -11,25 +11,27 @@ import Login from "./components/Login/Login";
 import "./App.css";
 import Register from "./components/Register/Register";
 
+
 const App = () => {
+  const [user, setUser] = React.useState({});
 
   return (
     <Router>
-      <div className="app">
-        <Navbar />
-        <div className="page padding scrolleable">
-          <Hero />
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/ejercicios" element={<Ejercicios />} />
-            <Route path="/rutinas" element={<Rutinas />} />
-            <Route path="/contacto" element={<Contacto />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Routes>
-        </div>
-        <Social />
-      </div>
+          <div className="app">
+            <Navbar />
+            <div className="page padding scrolleable">
+              <Hero />
+              <Routes>
+                <Route path="/" exact element={<Home />} />
+                <Route path="/ejercicios" element={<Ejercicios />} />
+                <Route path="/rutinas" element={<Rutinas />} />
+                <Route path="/contacto" element={<Contacto />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+              </Routes>
+            </div>
+            <Social />
+          </div>
     </Router>
   );
 };
